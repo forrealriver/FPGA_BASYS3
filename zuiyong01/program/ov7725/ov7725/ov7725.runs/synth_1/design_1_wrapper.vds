@@ -1,0 +1,557 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Nov 17 09:56:44 2016
+# Process ID: 7428
+# Current directory: C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3232 
+WARNING: [Synth 8-2507] parameter declaration becomes local in ram_read1 with formal parameter declaration list [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:43]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 314.152 ; gain = 107.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1_wrapper.v:23]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'IICctrl_0' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/IICctrl_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'IICctrl_0' (1#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/IICctrl_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (2#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-638] synthesizing module 'cam_ov7670_ov7725_0' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/cam_ov7670_ov7725_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'cam_ov7670_ov7725_0' (3#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/cam_ov7670_ov7725_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'u3' of module 'cam_ov7670_ov7725_0' requires 10 connections, but only 8 given [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:114]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (4#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ov7725_regData_0' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/ov7725_regData_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ov7725_regData_0' (5#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/ov7725_regData_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ram_read_1' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read_1.v:23]
+INFO: [Synth 8-638] synthesizing module 'ram_read1' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:24]
+	Parameter SHOW_H_START bound to: 4 - type: integer 
+	Parameter SHOW_V_START bound to: 3 - type: integer 
+	Parameter SHOW_WIDTH bound to: 320 - type: integer 
+	Parameter SHOW_HEIGHT bound to: 240 - type: integer 
+	Parameter caise_h bound to: 324 - type: integer 
+	Parameter caise_v bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (6#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'huidu' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:87]
+INFO: [Synth 8-638] synthesizing module 'line' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:126]
+INFO: [Synth 8-638] synthesizing module 'shift1' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:122]
+INFO: [Synth 8-256] done synthesizing module 'shift1' (7#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:122]
+INFO: [Synth 8-256] done synthesizing module 'line' (8#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:126]
+INFO: [Synth 8-638] synthesizing module 'sobel' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:135]
+INFO: [Synth 8-638] synthesizing module 'quart' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:198]
+INFO: [Synth 8-256] done synthesizing module 'quart' (9#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:198]
+INFO: [Synth 8-638] synthesizing module 'sqrt' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/sqrt_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'sqrt' (10#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/sqrt_stub.v:6]
+INFO: [Synth 8-4471] merging register 'p_y_data_reg[8:0]' into 'n_x_data_reg[8:0]' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:170]
+INFO: [Synth 8-256] done synthesizing module 'sobel' (11#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:135]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Gray_reg' and it is trimmed from '16' to '14' bits. [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:106]
+WARNING: [Synth 8-3936] Found unconnected internal register 'c_reg' and it is trimmed from '16' to '14' bits. [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:101]
+WARNING: [Synth 8-3936] Found unconnected internal register 'b_reg' and it is trimmed from '16' to '14' bits. [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:100]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a_reg' and it is trimmed from '16' to '14' bits. [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:99]
+INFO: [Synth 8-256] done synthesizing module 'huidu' (12#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:87]
+INFO: [Synth 8-256] done synthesizing module 'ram_read1' (13#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:24]
+INFO: [Synth 8-256] done synthesizing module 'ram_read_1' (14#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read_1.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'vga_h_cnt' does not match port width (12) of module 'ram_read_1' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:140]
+WARNING: [Synth 8-689] width (10) of port connection 'vga_v_cnt' does not match port width (11) of module 'ram_read_1' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:142]
+INFO: [Synth 8-638] synthesizing module 'vga_0' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/vga_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'vga_0' (15#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/realtime/vga_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (16#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (17#1) [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1_wrapper.v:23]
+WARNING: [Synth 8-3331] design sobel has unconnected port line2[7]
+WARNING: [Synth 8-3331] design sobel has unconnected port line2[6]
+WARNING: [Synth 8-3331] design sobel has unconnected port line2[5]
+WARNING: [Synth 8-3331] design sobel has unconnected port line2[4]
+WARNING: [Synth 8-3331] design sobel has unconnected port line2[3]
+WARNING: [Synth 8-3331] design huidu has unconnected port din[11]
+WARNING: [Synth 8-3331] design huidu has unconnected port din[6]
+WARNING: [Synth 8-3331] design huidu has unconnected port din[5]
+WARNING: [Synth 8-3331] design huidu has unconnected port din[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 332.918 ; gain = 126.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 332.918 ; gain = 126.008
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'IICctrl_0' instantiated as 'design_1_i/u1' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:96]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_0' instantiated as 'design_1_i/u2' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:105]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_1' instantiated as 'design_1_i/u6/inst/blk' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:49]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'cam_ov7670_ov7725_0' instantiated as 'design_1_i/u3' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:114]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'design_1_i/u4' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:124]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ov7725_regData_0' instantiated as 'design_1_i/u5' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:128]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'sqrt' instantiated as 'design_1_i/u6/inst/h/so/dd' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:183]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'vga_0' instantiated as 'design_1_i/u7' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/design_1.v:145]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp/IICctrl_0_in_context.xdc] for cell 'design_1_i/u1'
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp/IICctrl_0_in_context.xdc] for cell 'design_1_i/u1'
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'design_1_i/u2'
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_2/blk_mem_gen_0_in_context.xdc] for cell 'design_1_i/u2'
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_3/cam_ov7670_ov7725_0_in_context.xdc] for cell 'design_1_i/u3'
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_3/cam_ov7670_ov7725_0_in_context.xdc] for cell 'design_1_i/u3'
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_4/clk_wiz_0_in_context.xdc] for cell 'design_1_i/u4'
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_4/clk_wiz_0_in_context.xdc] for cell 'design_1_i/u4'
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_5/ov7725_regData_0_in_context.xdc] for cell 'design_1_i/u5'
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_5/ov7725_regData_0_in_context.xdc] for cell 'design_1_i/u5'
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_6/vga_0_in_context.xdc] for cell 'design_1_i/u7'
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_6/vga_0_in_context.xdc] for cell 'design_1_i/u7'
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_7/sqrt_in_context.xdc] for cell 'design_1_i/u6/inst/h/so/dd'
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_7/sqrt_in_context.xdc] for cell 'design_1_i/u6/inst/h/so/dd'
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_8/blk_mem_gen_1_in_context.xdc] for cell 'design_1_i/u6/inst/blk'
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_8/blk_mem_gen_1_in_context.xdc] for cell 'design_1_i/u6/inst/blk'
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/constrs_1/imports/Constraint/cam_bram_vga.xdc]
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/constrs_1/imports/Constraint/cam_bram_vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/constrs_1/imports/Constraint/cam_bram_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 634.672 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1. (constraint file  C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/synth_1/.Xil/Vivado-7428-WZJ/dcp_4/clk_wiz_0_in_context.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:166]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:172]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                9 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module quart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module sobel 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 1     
+	   3 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module huidu 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module ram_read1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'design_1_i/u6/inst/h/so/gy_data_reg[8:0]' into 'design_1_i/u6/inst/h/so/gy_data_reg[8:0]' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:172]
+INFO: [Synth 8-4471] merging register 'design_1_i/u6/inst/h/so/gx_data_reg[8:0]' into 'design_1_i/u6/inst/h/so/gx_data_reg[8:0]' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:166]
+INFO: [Synth 8-4471] merging register 'design_1_i/u6/inst/h/so/p_23_reg[2:0]' into 'design_1_i/u6/inst/h/so/p_31_reg[2:0]' [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/new/ram_read1.v:156]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 634.672 ; gain = 427.762
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/b_reg[0]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[4]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[3]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[9]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[1]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[7]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[10]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[2]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[8]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\design_1_i/u6/inst/h/out_data_reg[15] )
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[0]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[6]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_32_reg[0]' (FD) to 'design_1_i/u6/inst/h/so/p_13_reg[1]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_32_reg[1]' (FD) to 'design_1_i/u6/inst/h/so/p_31_reg[2]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_11_reg[0]' (FD) to 'design_1_i/u6/inst/h/so/p_31_reg[2]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_11_reg[1]' (FD) to 'design_1_i/u6/inst/h/so/p_33_reg[0]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_12_reg[0]' (FD) to 'design_1_i/u6/inst/h/so/p_33_reg[0]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_11_reg[2]' (FD) to 'design_1_i/u6/inst/h/so/p_33_reg[1]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_12_reg[1]' (FD) to 'design_1_i/u6/inst/h/so/p_33_reg[1]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_33_reg[0]' (FD) to 'design_1_i/u6/inst/h/so/p_31_reg[0]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_13_reg[0]' (FD) to 'design_1_i/u6/inst/h/so/p_33_reg[2]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_33_reg[1]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_31_reg[2]' (FD) to 'design_1_i/u6/inst/h/so/p_13_reg[2]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/p_31_reg[1]' (FD) to 'design_1_i/u6/inst/h/out_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gy_data_reg[5]' (FD) to 'design_1_i/u6/inst/h/so/gy_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gy_data_reg[7]' (FD) to 'design_1_i/u6/inst/h/so/gy_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gy_data_reg[8]' (FD) to 'design_1_i/u6/inst/h/so/gy_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gx_data_reg[5]' (FD) to 'design_1_i/u6/inst/h/so/gx_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gx_data_reg[7]' (FD) to 'design_1_i/u6/inst/h/so/gx_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gx_data_reg[8]' (FD) to 'design_1_i/u6/inst/h/so/gx_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[12]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[13]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[14]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[15]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[7]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[8]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[9]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[10]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[1]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[2]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/out_reg[3]' (FDR) to 'design_1_i/u6/inst/h/so/out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/out_data_reg[15]' (FD) to 'design_1_i/u6/inst/h/so/n_y_data_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\design_1_i/u6/inst/h/so/n_y_data_reg[0] )
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/n_y_data_reg[0]' (FD) to 'design_1_i/u6/inst/h/so/n_x_data_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\design_1_i/u6/inst/h/so/n_x_data_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[15]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[14]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[13]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[12]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[11]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[10]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[9]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[8]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[7]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[6]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[5]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[3]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[2]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[1]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/out_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/Gray_reg[8]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/Gray_reg[7]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/Gray_reg[6]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/Gray_reg[5]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/Gray_reg[4]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/Gray_reg[3]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/Gray_reg[2]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/Gray_reg[1]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/Gray_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[9]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[8]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[7]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[6]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[5]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[3]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[2]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[1]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gx_data_reg[8]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gx_data_reg[7]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gx_data_reg[5]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gy_data_reg[8]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gy_data_reg[7]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gy_data_reg[5]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[15]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/b_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[4]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/out_data_reg[10]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_32_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_31_reg[2]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_32_reg[1]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_11_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_33_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_11_reg[1]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_12_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_33_reg[1]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_11_reg[2]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_12_reg[1]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_13_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/p_31_reg[1]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/n_y_data_reg[0]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/n_x_data_reg[4]) is unused and will be removed from module design_1_wrapper.
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gy_data_reg[6]' (FD) to 'design_1_i/u6/inst/h/so/gx_data_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\design_1_i/u6/inst/h/so/gx_data_reg[6] )
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gxy_reg[12]' (FD) to 'design_1_i/u6/inst/h/so/gxy_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gx_data_reg[6]' (FD) to 'design_1_i/u6/inst/h/so/gxy_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gxy_reg[13]' (FD) to 'design_1_i/u6/inst/h/so/gxy_reg[15]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/u6/inst/h/so/gxy_reg[14]' (FD) to 'design_1_i/u6/inst/h/so/gxy_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\design_1_i/u6/inst/h/so/gxy_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gxy_reg[12]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gx_data_reg[6]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gy_data_reg[6]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gxy_reg[15]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gxy_reg[13]) is unused and will be removed from module design_1_wrapper.
+WARNING: [Synth 8-3332] Sequential element (design_1_i/u6/inst/h/so/gxy_reg[14]) is unused and will be removed from module design_1_wrapper.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 634.672 ; gain = 427.762
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/u4/clk_out1' to pin 'design_1_i/u4/bbstub_clk_out1/O'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 634.672 ; gain = 427.762
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |IICctrl_0           |         1|
+|2     |blk_mem_gen_0       |         1|
+|3     |cam_ov7670_ov7725_0 |         1|
+|4     |clk_wiz_0           |         1|
+|5     |ov7725_regData_0    |         1|
+|6     |vga_0               |         1|
+|7     |blk_mem_gen_1       |         1|
+|8     |sqrt                |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |IICctrl_0           |     1|
+|2     |blk_mem_gen_0       |     1|
+|3     |blk_mem_gen_1       |     1|
+|4     |cam_ov7670_ov7725_0 |     1|
+|5     |clk_wiz_0           |     1|
+|6     |ov7725_regData_0    |     1|
+|7     |sqrt                |     1|
+|8     |vga_0               |     1|
+|9     |BUFG                |     1|
+|10    |CARRY4              |    33|
+|11    |LUT1                |    30|
+|12    |LUT2                |    74|
+|13    |LUT3                |    25|
+|14    |LUT4                |    53|
+|15    |LUT5                |    11|
+|16    |LUT6                |    34|
+|17    |FDRE                |   134|
+|18    |IBUF                |    12|
+|19    |OBUF                |    16|
++------+--------------------+------+
+
+Report Instance Areas: 
++------+---------------+-----------+------+
+|      |Instance       |Module     |Cells |
++------+---------------+-----------+------+
+|1     |top            |           |   588|
+|2     |  design_1_i   |design_1   |   559|
+|3     |    u6         |ram_read_1 |   427|
+|4     |      inst     |ram_read1  |   427|
+|5     |        h      |huidu      |   305|
+|6     |          so   |sobel      |   203|
+|7     |            q2 |quart      |     4|
++------+---------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 634.672 ; gain = 427.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 634.672 ; gain = 99.117
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 634.672 ; gain = 427.762
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+107 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 634.672 ; gain = 403.668
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 634.672 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 17 09:57:15 2016...

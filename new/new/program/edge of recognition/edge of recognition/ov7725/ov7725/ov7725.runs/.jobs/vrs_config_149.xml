@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="IICctrl_0_synth_1" LaunchDir="F:/1___study/1___study/FPGA/The edge of the recognition/new/new/program/program/ov7725/ov7725/ov7725.runs/IICctrl_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cam_ov7670_ov7725_0_synth_1" LaunchDir="F:/1___study/1___study/FPGA/The edge of the recognition/new/new/program/program/ov7725/ov7725/ov7725.runs/cam_ov7670_ov7725_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ov7725_regData_0_synth_1" LaunchDir="F:/1___study/1___study/FPGA/The edge of the recognition/new/new/program/program/ov7725/ov7725/ov7725.runs/ov7725_regData_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vga_0_synth_1" LaunchDir="F:/1___study/1___study/FPGA/The edge of the recognition/new/new/program/program/ov7725/ov7725/ov7725.runs/vga_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="F:/1___study/1___study/FPGA/The edge of the recognition/new/new/program/program/ov7725/ov7725/ov7725.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="IICctrl_0_synth_1"/>
+		<Parent Id="cam_ov7670_ov7725_0_synth_1"/>
+		<Parent Id="ov7725_regData_0_synth_1"/>
+		<Parent Id="vga_0_synth_1"/>
+	</Run>
+</Runs>
+

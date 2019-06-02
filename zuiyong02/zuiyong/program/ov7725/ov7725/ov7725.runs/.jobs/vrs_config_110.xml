@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="wzj_synth_1" LaunchDir="F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.runs/wzj_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

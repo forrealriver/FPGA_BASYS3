@@ -1,0 +1,733 @@
+
+*** Running vivado
+    with args -log sqrt.vds -m64 -mode batch -messageDb vivado.pb -notrace -source sqrt.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source sqrt.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/Vivado/program/Digital-Design-Lab-master/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Vivado/program/program'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'e:/Vivado/program/program' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'e:/Vivado/program/program/ov7725/ov7725/ov7725.runs/sqrt_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/sqrt.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/sqrt_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/sqrt_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/sqrt_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sqrt' generated file not found 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/sqrt_sim_netlist.vhdl'. Please regenerate to continue.
+Command: synth_design -top sqrt -part xc7a35tcpg236-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2016.05' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 312.832 ; gain = 139.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sqrt' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/synth/sqrt.vhd:69]
+INFO: [Synth 8-3491] module 'cordic_v6_0_9' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0.vhd:116' bound to instance 'U0' of component 'cordic_v6_0_9' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/synth/sqrt.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'cordic_v6_0_9' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0.vhd:173]
+INFO: [Synth 8-3491] module 'cordic_v6_0_9_viv' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9450' bound to instance 'i_synth' of component 'cordic_v6_0_9_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'cordic_v6_0_9_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9518]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2073]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2077]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2081]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2085]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2089]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2093]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2114]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2123]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2127]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2131]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2135]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:2151]
+INFO: [Synth 8-3919] null assignment ignored [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9718]
+INFO: [Synth 8-3919] null assignment ignored [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9719]
+INFO: [Synth 8-3919] null assignment ignored [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9723]
+INFO: [Synth 8-3919] null assignment ignored [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9750]
+INFO: [Synth 8-3491] module 'xbip_pipe_v3_0_1_viv' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd:284' bound to instance 'i_nd_to_rdy' of component 'xbip_pipe_v3_0_1_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9910]
+INFO: [Synth 8-638] synthesizing module 'xbip_pipe_v3_0_1_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+INFO: [Synth 8-256] done synthesizing module 'xbip_pipe_v3_0_1_viv' (1#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_pipe_v3_0_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd:309]
+INFO: [Synth 8-3491] module 'cordic_v6_0_9_synth' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8990' bound to instance 'i_synth' of component 'cordic_v6_0_9_synth' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9997]
+INFO: [Synth 8-638] synthesizing module 'cordic_v6_0_9_synth' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9038]
+INFO: [Synth 8-3491] module 'cordic_sqrt' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8524' bound to instance 'square_root' of component 'cordic_sqrt' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9295]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8551]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_in_int' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8695]
+INFO: [Synth 8-638] synthesizing module 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay' (2#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay_bit' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4040' bound to instance 'gen_nd_int' of component 'delay_bit' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8708]
+INFO: [Synth 8-638] synthesizing module 'delay_bit' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-256] done synthesizing module 'delay_bit' (3#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-3491] module 'delay_bit' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4040' bound to instance 'gen_rdy_int' of component 'delay_bit' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8722]
+INFO: [Synth 8-638] synthesizing module 'delay_bit__parameterized1' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-256] done synthesizing module 'delay_bit__parameterized1' (3#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:4061]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8344' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8799]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'addsub' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_rem_inc' of component 'addsub' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8391]
+INFO: [Synth 8-638] synthesizing module 'addsub' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1036]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1039]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1042]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1045]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1048]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1051]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1054]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1057]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1061]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1065]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1068]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1071]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1074]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1077]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1080]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1084]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1089]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1091]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1093]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1096]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1098]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1101]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1106]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1108]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1110]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1112]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1114]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1131]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1840]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1843]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1847]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1850]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1853]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1856]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1859]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1862]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1865]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1868]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1871]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1874]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1877]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1880]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1883]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1886]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1889]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1892]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1895]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1898]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1901]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1904]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1907]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1910]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1913]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1916]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1919]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1922]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1925]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1928]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1931]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1934]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1939]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1944]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1947]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1952]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1961]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1965]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1982]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1985]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1988]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2008]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:594]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:597]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2386]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2390]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy' (4#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy' (5#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy' (6#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv' (7#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub' (8#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_inv_sqrt_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8411]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (8#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_rem_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8429]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized3' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized3' (8#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_int' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8444]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized5' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized5' (8#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8344' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8821]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized1' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'addsub' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_rem_inc' of component 'addsub' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8391]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized1' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized1' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1036]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1039]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1042]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1045]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1048]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1051]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1054]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: assertion statement [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:1057]
+INFO: [Common 17-14] Message 'Synth 8-312' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized1' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized1' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized1' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized1' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized1' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized1' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized1' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized1' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_inv_sqrt_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8411]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized7' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized7' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_rem_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8429]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized9' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized9' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_int' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8444]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized11' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized11' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized1' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8344' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8799]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized3' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'addsub' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_rem_inc' of component 'addsub' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8391]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized3' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized3' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized3' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized3' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized3' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized3' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized3' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized3' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized3' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized3' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_inv_sqrt_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8411]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized13' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized13' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_rem_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8429]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized15' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized15' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_int' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8444]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized17' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized17' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized3' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8344' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8821]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized5' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'addsub' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_rem_inc' of component 'addsub' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8391]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized5' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized5' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized5' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized5' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized5' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized5' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized5' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized5' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized5' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized5' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_inv_sqrt_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8411]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized19' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized19' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_rem_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8429]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized21' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized21' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_int' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8444]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized23' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized23' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized5' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8344' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8799]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized7' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'addsub' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_rem_inc' of component 'addsub' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8391]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized7' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized7' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized7' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized7' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized7' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized7' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized7' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized7' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized7' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized7' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_inv_sqrt_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8411]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized25' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized25' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_rem_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8429]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized27' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized27' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_int' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8444]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized29' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3919] null assignment ignored [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3556]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized29' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized7' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8344' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8821]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized9' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'addsub' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_rem_inc' of component 'addsub' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8391]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized9' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized9' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized9' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized9' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized9' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-113] binding component instance 'carrymux0' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3264]
+INFO: [Synth 8-113] binding component instance 'carryxor0' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3272]
+INFO: [Synth 8-113] binding component instance 'carryxortop' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3284]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Synth 8-113] binding component instance 'carrymux' to cell 'MUXCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3306]
+INFO: [Synth 8-113] binding component instance 'carryxor' to cell 'XORCY' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:3314]
+INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized9' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized9' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized9' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized9' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized9' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_inv_sqrt_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8411]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized31' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized31' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_rem_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8429]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized33' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized33' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_int' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8444]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized35' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized35' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized9' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'cordic_sqrt_mod' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8344' bound to instance 'gen_rem' of component 'cordic_sqrt_mod' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8843]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt_mod__parameterized11' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'addsub' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3372' bound to instance 'gen_rem_inc' of component 'addsub' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8391]
+INFO: [Synth 8-638] synthesizing module 'addsub__parameterized11' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_viv' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6457' bound to instance 'inst' of component 'c_addsub_v12_0_8_viv' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3403]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_viv__parameterized11' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5542' bound to instance 'i_baseblox_addsub' of component 'c_addsub_v12_0_8_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6636]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_legacy__parameterized11' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_fabric_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5278' bound to instance 'the_addsub' of component 'c_addsub_v12_0_8_fabric_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5909]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized11' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_8_lut6_legacy' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2291' bound to instance 'i_lut6_addsub' of component 'c_addsub_v12_0_8_lut6_legacy' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5347]
+INFO: [Synth 8-638] synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized11' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+WARNING: [Synth 8-5639] ignoring null variable initialization [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/xbip_utils_v3_0_5/hdl/xbip_utils_v3_0_vh_rfs.vhd:592]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_lut6_legacy__parameterized11' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:2343]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_fabric_legacy__parameterized11' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5330]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_legacy__parameterized11' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:5618]
+INFO: [Synth 8-256] done synthesizing module 'c_addsub_v12_0_8_viv__parameterized11' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/c_addsub_v12_0_8/hdl/c_addsub_v12_0_vh_rfs.vhd:6515]
+INFO: [Synth 8-256] done synthesizing module 'addsub__parameterized11' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3395]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_inv_sqrt_out' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8411]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized37' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized37' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_data_int' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8444]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized39' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized39' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+WARNING: [Synth 8-3848] Net rem_out in module/entity cordic_sqrt_mod__parameterized11 does not have driver. [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8357]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt_mod__parameterized11' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8364]
+INFO: [Synth 8-3491] module 'delay' declared at 'e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3525' bound to instance 'gen_sqrt_tmp' of component 'delay' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8867]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized41' [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized41' (9#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:3546]
+WARNING: [Synth 8-3848] Net rdy in module/entity cordic_sqrt does not have driver. [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8544]
+INFO: [Synth 8-256] done synthesizing module 'cordic_sqrt' (10#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:8551]
+INFO: [Synth 8-256] done synthesizing module 'cordic_v6_0_9_synth' (11#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9038]
+INFO: [Synth 8-256] done synthesizing module 'cordic_v6_0_9_viv' (12#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0_vh_rfs.vhd:9518]
+INFO: [Synth 8-256] done synthesizing module 'cordic_v6_0_9' (13#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/cordic_v6_0_9/hdl/cordic_v6_0.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'sqrt' (14#1) [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/synth/sqrt.vhd:69]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 365.523 ; gain = 192.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 365.523 ; gain = 192.621
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 133 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/sqrt_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/sqrt_ooc.xdc] for cell 'U0'
+Parsing XDC File [E:/Vivado/program/program/ov7725/ov7725/ov7725.runs/sqrt_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Vivado/program/program/ov7725/ov7725/ov7725.runs/sqrt_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 630.285 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 630.285 ; gain = 457.383
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_nd_int/gen_rtl.gen_reg.d_reg_reg ' (FDRE) to 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[8].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[2] '
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] ' (FDRE) to 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[7].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[3] '
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1] ' (FDRE) to 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[6].gen_pre_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[4] '
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[2] ' (FDRE) to 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[6].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[5] '
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[3] ' (FDRE) to 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[7].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[6] '
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[4] ' (FDRE) to 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[8].gen_post_mid.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[7] '
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[5] ' (FDRE) to 'U0/i_synth/\i_synth/gen_sqrt.square_root/gen_iterations[9].gen_last.gen_rem/gen_inv_sqrt_out/gen_rtl.gen_reg.d_reg_reg[8] '
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_sqrt.square_root/gen_nd_int/gen_rtl.gen_reg.d_reg_reg ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[2] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[3] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[4] ) is unused and will be removed from module cordic_v6_0_9_viv.
+INFO: [Synth 8-3332] Sequential element (\i_synth/gen_sqrt.square_root/gen_rdy_int/gen_rtl.gen_dly.gen_regs.delay_bus_reg[5] ) is unused and will be removed from module cordic_v6_0_9_viv.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 630.285 ; gain = 457.383
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 630.285 ; gain = 457.383
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |     9|
+|2     |LUT2   |    80|
+|3     |LUT3   |    37|
+|4     |LUT4   |     2|
+|5     |MUXCY  |    63|
+|6     |SRL16E |     9|
+|7     |XORCY  |    70|
+|8     |FDRE   |   123|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 630.285 ; gain = 457.383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 630.285 ; gain = 76.398
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 630.285 ; gain = 457.383
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 133 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/sqrt_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/Vivado/program/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/sqrt/sqrt_ooc.xdc] for cell 'U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 27 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+353 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 630.285 ; gain = 404.332
+INFO: [Coretcl 2-1174] Renamed 69 cell refs.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 630.285 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 12 20:10:32 2016...

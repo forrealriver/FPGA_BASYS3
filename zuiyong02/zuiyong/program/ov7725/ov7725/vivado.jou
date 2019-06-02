@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Sun Aug 06 16:05:34 2017
+# Process ID: 11300
+# Current directory: F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3080 F:\1___study\FPGA\The edge of the recognition\zuiyong\zuiyong\program\ov7725\ov7725\ov7725.xpr
+# Log file: F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/vivado.log
+# Journal file: F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.xpr}
+update_compile_order -fileset sources_1
+create_ip -name cordic -vendor xilinx.com -library ip -version 6.0 -module_name wzj
+set_property -dict [list CONFIG.Functional_Selection {Square_Root} CONFIG.Data_Format {UnsignedInteger} CONFIG.Output_Width {9} CONFIG.Coarse_Rotation {false}] [get_ips wzj]
+generate_target {instantiation_template} [get_files {{f:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/wzj/wzj.xci}}]
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{f:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/wzj/wzj.xci}}]
+export_ip_user_files -of_objects [get_files {{f:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/wzj/wzj.xci}}] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{f:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/wzj/wzj.xci}}]
+launch_run -jobs 2 wzj_synth_1
+export_simulation -of_objects [get_files {{f:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/wzj/wzj.xci}}] -directory {F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.ip_user_files/sim_scripts} -ip_user_files_dir {F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.ip_user_files} -ipstatic_source_dir {F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.ip_user_files/ipstatic} -force -quiet

@@ -1,0 +1,75 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date         : Sun Aug 06 15:24:43 2017
+| Host         : DESKTOP-0P80SNP running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    22 |
+| Unused register locations in slices containing registers |    91 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             206 |           73 |
+| No           | No                    | Yes                    |              24 |           10 |
+| No           | Yes                   | No                     |              51 |           16 |
+| Yes          | No                    | No                     |              59 |           32 |
+| Yes          | No                    | Yes                    |              18 |            8 |
+| Yes          | Yes                   | No                     |              63 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|             Clock Signal             |                                      Enable Signal                                     |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++--------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  design_1_i/u6/inst/h/so/u1/clk_scan |                                                                                        | design_1_i/u6/inst/h/so/u2/current_showdata[7]_i_1_n_0 |                1 |              4 |
+|  clk_in1_BUFG                        |                                                                                        |                                                        |                3 |              4 |
+|  design_1_i/u4/inst/clk_out1         | design_1_i/u1/inst/u_I2C_Controller/E[0]                                               | rst_IBUF                                               |                3 |              4 |
+|  design_1_i/u6/inst/h/so/u1/clk_scan |                                                                                        |                                                        |                3 |              5 |
+|  OV7725_PCLK_IBUF_BUFG               |                                                                                        | OV7725_VSYNC_IBUF                                      |                3 |              6 |
+|  design_1_i/u4/inst/clk_out1         | design_1_i/u1/inst/u_I2C_Controller/SD_COUNTER                                         | rst_IBUF                                               |                2 |              6 |
+|  design_1_i/u4/inst/clk_out1         | design_1_i/u1/inst/LUT_INDEX[7]_i_1_n_0                                                | rst_IBUF                                               |                3 |              8 |
+|  design_1_i/u6/inst/h/so/q2/aclk     | design_1_i/u6/inst/h/so/dd/U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/rdy_int |                                                        |                3 |              9 |
+|  design_1_i/u4/inst/clk_out1         | design_1_i/u6/inst/clka0                                                               | design_1_i/u6/inst/clkb                                |                2 |              9 |
+|  design_1_i/u4/inst/clk_out1         | design_1_i/u6/inst/clkb                                                                | design_1_i/u6/inst/clka0                               |                2 |              9 |
+|  design_1_i/u4/inst/clk_out1         |                                                                                        | design_1_i/u7/inst/pixel_cnt[10]_i_1_n_0               |                4 |             11 |
+|  design_1_i/u4/inst/clk_out1         | design_1_i/u7/inst/line_cnt[10]_i_2_n_0                                                | design_1_i/u7/inst/line_cnt[10]_i_1_n_0                |                3 |             11 |
+|  OV7725_PCLK_IBUF_BUFG               |                                                                                        | design_1_i/u3/inst/address[15]_i_1_n_0                 |                3 |             13 |
+|  OV7725_PCLK_IBUF_BUFG               | design_1_i/u3/inst/dout[15]_i_1_n_0                                                    |                                                        |               10 |             16 |
+|  OV7725_PCLK_IBUF_BUFG               | design_1_i/u3/inst/we_i_1_n_0                                                          |                                                        |               11 |             17 |
+|  OV7725_PCLK_IBUF_BUFG               | design_1_i/u3/inst/p_0_in_0                                                            | OV7725_VSYNC_IBUF                                      |                5 |             17 |
+|  clk_in1_BUFG                        |                                                                                        | design_1_i/u6/inst/h/so/u1/clk_scan_0                  |                5 |             17 |
+|  design_1_i/u4/inst/clk_out1         | design_1_i/u6/inst/address0                                                            | design_1_i/u6/inst/address[0]_i_1_n_0                  |                5 |             17 |
+|  design_1_i/u4/inst/clk_out1         | design_1_i/u6/inst/clka0                                                               |                                                        |                8 |             17 |
+|  design_1_i/u4/inst/clk_out1         |                                                                                        | rst_IBUF                                               |               10 |             24 |
+|  design_1_i/u4/inst/clk_out1         |                                                                                        |                                                        |               35 |             93 |
+|  design_1_i/u6/inst/h/so/q2/aclk     |                                                                                        |                                                        |               36 |            112 |
++--------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

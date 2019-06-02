@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Apr 15 23:47:34 2019
+# Process ID: 9352
+# Current directory: F:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/edge of recognition/ov7725/ov7725
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9076 F:\本科学习\FPGA\The edge of the recognition\new\new\program\edge of recognition\edge of recognition\ov7725\ov7725\ov7725.xpr
+# Log file: F:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/edge of recognition/ov7725/ov7725/vivado.log
+# Journal file: F:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/edge of recognition/ov7725/ov7725\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/edge of recognition/ov7725/ov7725/ov7725.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/edge of recognition/ov7725/ov7725'
+INFO: [Project 1-313] Project file moved from 'F:/1___study/FPGA/The edge of the recognition/new/new/program/edge of recognition/edge of recognition/ov7725/ov7725' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/Digital-Design-Lab-master/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog', nor could it be found using path 'F:/1___study/FPGA/The edge of the recognition/new/new/program/edge of recognition/Digital-Design-Lab-master/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/program', nor could it be found using path 'F:/1___study/FPGA/The edge of the recognition/new/new/program/edge of recognition/program'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/Digital-Design-Lab-master/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/edge of recognition/HDL_source'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/本科学习/FPGA/The edge of the recognition/new/new/program/edge of recognition/program'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2016.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'blk_mem_gen_0' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.2)' for IP 'clk_wiz_0' has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'sqrt' is locked:
+* IP definition 'CORDIC (6.0)' for IP 'sqrt' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_1' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'blk_mem_gen_1' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 806.184 ; gain = 173.004
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 23:49:20 2019...

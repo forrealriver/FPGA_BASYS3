@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Sat Aug 05 20:41:34 2017
+# Process ID: 972
+# Current directory: F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2828 F:\1___study\FPGA\The edge of the recognition\zuiyong\zuiyong\program\ov7725\ov7725\ov7725.xpr
+# Log file: F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/vivado.log
+# Journal file: F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/1___study/FPGA/The edge of the recognition/zuiyong/zuiyong/program/ov7725/ov7725/ov7725.xpr}
+update_compile_order -fileset sources_1

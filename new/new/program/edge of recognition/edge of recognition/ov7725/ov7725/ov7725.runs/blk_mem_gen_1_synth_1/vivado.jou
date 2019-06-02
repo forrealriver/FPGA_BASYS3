@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Nov 24 10:28:56 2016
+# Process ID: 14252
+# Current directory: E:/Vivado/program/program/program/ov7725/ov7725/ov7725.runs/blk_mem_gen_1_synth_1
+# Command line: vivado.exe -log blk_mem_gen_1.vds -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_1.tcl
+# Log file: E:/Vivado/program/program/program/ov7725/ov7725/ov7725.runs/blk_mem_gen_1_synth_1/blk_mem_gen_1.vds
+# Journal file: E:/Vivado/program/program/program/ov7725/ov7725/ov7725.runs/blk_mem_gen_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_1.tcl -notrace

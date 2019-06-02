@@ -1,0 +1,4 @@
+Language File-Name IP     Library         File-Path                                             
+Verilog, vga.v,    vga_0, xil_defaultlib, ../../../../ov7725.srcs/sources_1/ip/vga_0/src/vga.v  
+Verilog, vga_0.v,  vga_0, xil_defaultlib, ../../../../ov7725.srcs/sources_1/ip/vga_0/sim/vga_0.v
+Verilog, glbl.v,   *,     xil_defaultlib, glbl.v                                                

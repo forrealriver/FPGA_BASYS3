@@ -1,0 +1,162 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Nov 17 10:54:15 2016
+# Process ID: 2720
+# Current directory: C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3672 C:\Users\WZJ\Desktop\zuiyong\program\ov7725\ov7725\ov7725.xpr
+# Log file: C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/vivado.log
+# Journal file: C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'C:/Users/WZJ/Desktop/zuiyong/Digital-Design-Lab-master/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/WZJ/Desktop/zuiyong/Digital-Design-Lab-master/Chapter_12/Digital_camera/files/HDL_source/IP_Catalog'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/WZJ/Desktop/zuiyong/program/HDL_source'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/WZJ/Desktop/zuiyong/program'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/WZJ/Desktop/zuiyong/program' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'c:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/vivado/Vivado/2016.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'blk_mem_gen_0' has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (5.2)' for IP 'clk_wiz_0' has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 864.348 ; gain = 198.738
+update_compile_order -fileset sources_1
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183740666A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183740666A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183740666A
+set_property PROGRAM.FILE {C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Vivado 12-106] *** Exception: java.lang.IllegalArgumentException: Comparison method violates its general contract! (See C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/vivado_pid2720.debug)
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {n25q128-3.3v-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+write_cfgmem -format mcs -interface spix4 -size 128 -loadbit "up 0 C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit" -file  wzj.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/u4/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/.Xil/Vivado-5088-WZJ/dcp_5/clk_wiz_0.edf:276]
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/.Xil/Vivado-2720-WZJ/dcp/design_1_wrapper_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:56]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1602.078 ; gain = 460.594
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/.Xil/Vivado-2720-WZJ/dcp/design_1_wrapper_early.xdc]
+Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/.Xil/Vivado-2720-WZJ/dcp/design_1_wrapper.xdc]
+Finished Parsing XDC File [C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/.Xil/Vivado-2720-WZJ/dcp/design_1_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1602.961 ; gain = 0.867
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1602.961 ; gain = 0.867
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 1717.059 ; gain = 700.855
+write_cfgmem -format mcs -interface spix4 -size 128 -loadbit "up 0 C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit" -file  wzj.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit
+ERROR: [Writecfgmem 68-20] SPI_BUSWIDTH property is set to "1" on bitfile C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit. This property has to be set to "4" to generate a configuration memory file for the SPIX4 interface. Please ensure that a valid value has been set for the property BITSTREAM.Config.SPI_buswidth and rerun this command.
+ERROR: [Common 17-39] 'write_cfgmem' failed due to earlier errors.
+write_cfgmem -format mcs -interface spix1 -size 128 -loadbit "up 0 C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit" -file  wzj.mcs
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit
+Writing file ./wzj.mcs
+Writing log file ./wzj.prm
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0021728B    Nov 17 09:58:52 2016    C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183740666A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183740666A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183740666A
+set_property PROGRAM.FILE {C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/ov7725.runs/impl_1/design_1_wrapper.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev  [lindex [get_cfgmem_parts {n25q128-3.3v-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.FILES [list "C:/Users/WZJ/Desktop/zuiyong/program/ov7725/ov7725/wzj.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+startgroup 
+if {![string equal [get_property PROGRAM.HW_CFGMEM_TYPE  [lindex [get_hw_devices] 0]] [get_property MEM_TYPE [get_property CFGMEM_PART [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]]]] }  { create_hw_bitstream -hw_device [lindex [get_hw_devices] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices] 0]]; program_hw_devices [lindex [get_hw_devices] 0]; }; 
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_cfgmem -hw_cfgmem [get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
+Mfg ID : 1   Memory Type : 2   Memory Capacity : 15   Device ID 1 : 0   Device ID 2 : 0
+Part identified : s25fl032p Part selected : n25q128-3.3v
+ERROR: [Labtools 27-2250] Selected part does not match part identified. Please select another configuration memory part.
+ERROR: [Labtools 27-3161] Flash Programming Unsuccessful
+ERROR: [Common 17-39] 'program_hw_cfgmem' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 17 11:16:36 2016...

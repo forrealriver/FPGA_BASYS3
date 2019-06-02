@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Mon Aug 07 15:34:48 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="3d160404cb1343b4857b576b526fef45" type="ProjectID"/>
+<property name="ProjectIteration" value="73" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AutoConnectTarget" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="0" type="JavaHandler"/>
+<property name="CreateBlockDesign" value="1" type="JavaHandler"/>
+<property name="EditRedo" value="84" type="JavaHandler"/>
+<property name="LaunchOpenTarget" value="14" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="35" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="13" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="9" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="7" type="JavaHandler"/>
+<property name="RunBitgen" value="8" type="JavaHandler"/>
+<property name="RunImplementation" value="1" type="JavaHandler"/>
+<property name="RunSynthesis" value="5" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, cam_bram_vga.xdc], 5, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints, constrs_1, cam_bram_vga.xdc], 5, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Constraints], 3" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, design_1_wrapper (design_1_wrapper.v" value="10" type="GuiResourceData"/>
+<property name="cam_bram_vga.xdc, 459, 334" value="1" type="GuiResourceData"/>
+<property name="design_1.v, 118, 430" value="1" type="GuiResourceData"/>
+<property name="design_1.v, 280, 350" value="1" type="GuiResourceData"/>
+<property name="design_1.v, 494, 486" value="1" type="GuiResourceData"/>
+<property name="design_1.v, 503, 439" value="1" type="GuiResourceData"/>
+<property name="design_1.v, 71, 294" value="1" type="GuiResourceData"/>
+<property name="design_1_wrapper.v, 184, 392" value="1" type="GuiResourceData"/>
+<property name="design_1_wrapper.v, 269, 369" value="1" type="GuiResourceData"/>
+<property name="design_1_wrapper.v, 647, 315" value="1" type="GuiResourceData"/>
+<property name="design_1_wrapper.v, 74, 227" value="1" type="GuiResourceData"/>
+<property name="design_1_wrapper.v, 77, 229" value="1" type="GuiResourceData"/>
+<property name="design_1_wrapper.v, 81, 230" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 101, 387" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 164, 557" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 219, 426" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 219, 426, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 300, 373" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 317, 391" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 349, 372" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 490, 389" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 645, 395" value="1" type="GuiResourceData"/>
+<property name="ram_read1.v, 891, 332" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="33" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="23" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
